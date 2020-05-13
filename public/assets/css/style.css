@@ -1,0 +1,275 @@
+html, body {
+    /* background-color: #f3f3f3; */
+    color: #000;
+    font-family: Roboto, 'Open Sans' !important;
+    height: 100vh;
+    margin: 0;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url("RobotoFont/Roboto-Regular.ttf") format('truetype');
+    src: url("RobotoFont/roboto-v20-latin-regular.woff") format('woff');
+}
+
+.main-container {
+    width: 90%;
+    margin: auto;
+}
+
+.padSide {
+    padding-left: 20%;
+}
+
+.showOver{
+    overflow: visible !important;
+}
+
+.modal.show {
+    display: block;
+}
+
+#schoolInfo{
+    width:100%;
+    height: 40px;
+    font-size:20px;
+    margin: 0px;
+    text-align:center;
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top:0 !important;
+}
+
+#menuSide{
+    padding-top: 0px !important;
+    white-space: nowrap;
+    height: 550px !important;
+    margin-top: 104px !important;
+    width: 20% !important;
+    text-align:left !important;
+    /* overflow: scroll !important; */
+    /* backface-visibility: visible !important; */
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 650px){
+    #menuSide{
+        width: 80% !important;
+    }
+
+    .padSide {
+        padding-left: 0px;
+    }
+}
+
+@media print{
+    #menuSide {display: none;}
+}
+
+.bottomdash{
+    border-bottom:0.08rem black dashed !important;
+}
+
+.thinrow{
+    padding:0px !important;
+}
+
+.rowBord{
+    border-bottom:0.1rem solid black !important;
+}
+/* #menuSide .sideLi{
+    background: rgb(195, 211, 202);
+} */
+
+#menuSide .collapsible-header{
+    font-weight: bold;
+}
+
+.modal.hide {
+    display: none;
+}
+
+.modal.modal-fixed-footer .modal-footer {
+    border-top: 0px;
+    border-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+}
+
+.form-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+img.default-img {
+    opacity: 0.3;
+    padding: 0px;
+    width: 50%;
+}
+
+button.btn:active,
+a.btn:active {
+    color: #fff;
+}
+
+.object-table-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+a.waves-effect {
+    margin: 0px;
+}
+
+nav {
+    box-sizing: border-box;
+}
+
+/* Scroll Bar */
+tbody::-webkit-scrollbar-track,
+.modal::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    background-color: #FFFFFF;
+}
+
+tbody::-webkit-scrollbar,
+.modal::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    /* background-color: #F5F5F5; */
+}
+
+tbody::-webkit-scrollbar-thumb,
+.modal::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border: 2px solid #555555;
+    border-radius: 5px;
+}
+
+.datatableContainer {
+    margin-top: 20px;
+}
+
+/* div.input-field {
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+/* Margin Top Utility */
+.mt-0 {
+    margin-top: 0px;
+}
+.mt-1 {
+    margin-top: 2px;
+}
+.mt-2 {
+    margin-top: 4px;
+}
+.mt-3 {
+    margin-top: 6px;
+}
+.mt-4 {
+    margin-top: 8px;
+}
+.mt-5 {
+    margin-top: 10px;
+}
+
+
+/* Margin Bottom Utility */
+.mb-0 {
+    margin-bottom: 0px;
+}
+.mb-1 {
+    margin-bottom: 2px;
+}
+.mb-2 {
+    margin-bottom: 4px;
+}
+.mb-3 {
+    margin-bottom: 6px;
+}
+.mb-4 {
+    margin-bottom: 8px;
+}
+.mb-5 {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width : 600px) {
+    nav {
+        height: 65px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .resp-btn {
+        margin-bottom: 5px;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+
+    .modal.modal-fixed-footer .modal-footer {
+        border-top: 1px solid rgba(0,0,0,0.1);
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .modal::-webkit-scrollbar-track {
+        /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+        /* background-color: #F5F5F5; */
+    }
+
+    .modal::-webkit-scrollbar {
+        width: 4px;
+        /* background-color: #F5F5F5; */
+    }
+
+    .modal::-webkit-scrollbar-thumb {
+        background-color: #555555;
+        border: 2px solid #555555;
+        border-radius: 5px;
+    }
+}
+
+/*
+    Materilize Input Fields Validation Css
+*/
+/* label color */
+.input-field label {
+    color: #666;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: teal;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid teal;
+    box-shadow: 0 1px 0 0 teal;
+}
+
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid {
+    border-bottom: 1px solid #00c853;
+    box-shadow: 0 1px 0 0 #00c853;
+}
+/* invalid color */
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid {
+    border-bottom: 1px solid tomato;
+    box-shadow: 0 1px 0 0 tomato;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: teal;
+}
